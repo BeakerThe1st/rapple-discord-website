@@ -7,6 +7,7 @@ import { NotificationsProvider } from "@mantine/notifications";
 import AppShell from "./components/AppShell";
 import Home from "./routes/Home";
 import Appeals from "./routes/Appeals";
+import FourOhFour from "./routes/FourOhFour";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.render(
             <Route path="/" element={<AppShell />}>
               <Route index element={<Home />} />
               <Route path="appeals" element={<Appeals />} />
+              <Route path="*" element={<FourOhFour />} />
             </Route>
           </Routes>
         </BrowserRouter>
