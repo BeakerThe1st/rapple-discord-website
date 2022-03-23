@@ -26,8 +26,9 @@ const Appeals = () => {
       <Image
         src={guildInfo.iconURL}
         alt="r/Apple Discord Icon"
-        width="10%"
-        classNames={{ image: "rounded-full mx-auto" }}
+        classNames={{
+          image: "rounded-full mx-auto max-w-[30%] md:max-w-[128px]",
+        }}
       />
       <Title align="center" order={1} className="mt-4">
         r/Apple Discord Ban Appeals
