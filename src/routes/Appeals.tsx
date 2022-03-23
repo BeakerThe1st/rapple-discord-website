@@ -179,7 +179,7 @@ const AppealForm = ({ disabled }: AppealFormProps) => {
   });
   return (
     <Center mt="lg">
-      <form onSubmit={form.onSubmit(handleSubmit)}>
+      <form onSubmit={form.onSubmit(handleSubmit)} data-netlify="true">
         <Group>
           <TextInput
             disabled={disabled}
