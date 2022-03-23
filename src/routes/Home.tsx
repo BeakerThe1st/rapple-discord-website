@@ -10,40 +10,40 @@ const Home = () => {
     <div className="flex flex-col">
       <Image
         radius="md"
+        className="max-w-[800px] m-auto"
         src={guildInfo.bannerURL}
         alt="r/Apple Discord Banner"
-        width="50%"
         classNames={{
           image: "mx-auto shadow",
         }}
       />
       <Image
-        width="12.5%"
         src={guildInfo.iconURL}
         alt="r/Apple Discord Icon"
         withPlaceholder
-        className="-translate-y-1/2"
+        className="-translate-y-1/2 max-w-[30%] m-auto"
         classNames={{
           image: "rounded-full mx-auto shadow-lg",
         }}
       />
-      <div className="text-center -mt-12">
+      <div className="text-center -mt-10">
         <Title order={1}>r/Apple Discord</Title>
         <Text size="lg">{guildInfo.members.toLocaleString()} members</Text>
+        <Button
+          mt="lg"
+          component="a"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://discord.gg/apple"
+          variant="gradient"
+          className="mx-auto"
+          leftIcon={<BrandDiscord size={18} />}
+          size="lg"
+          gradient={{ from: "indigo", to: "cyan" }}
+        >
+          Join Server
+        </Button>
       </div>
-      <Button
-        component="a"
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://discord.gg/apple"
-        variant="gradient"
-        className="mx-auto mt-6"
-        leftIcon={<BrandDiscord size={18} />}
-        size="lg"
-        gradient={{ from: "indigo", to: "cyan" }}
-      >
-        Join Server
-      </Button>
     </div>
   );
 };
