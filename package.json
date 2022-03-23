@@ -14,12 +14,14 @@
     "@mantine/notifications": "^4.0.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "6",
     "tabler-icons-react": "^1.39.0"
   },
   "devDependencies": {
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
+    "@types/react-helmet": "^6.1.5",
     "@vitejs/plugin-react": "^1.0.7",
     "autoprefixer": "^10.4.4",
     "postcss": "^8.4.12",

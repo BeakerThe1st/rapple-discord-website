@@ -5,6 +5,7 @@ import {
   Container,
   Loader,
 } from "@mantine/core";
+import { Helmet } from "react-helmet";
 import { Outlet } from "react-router-dom";
 import GuildInfoContext, { GuildInfo } from "../context/GuildInfoContext";
 import Header from "./Header";
@@ -13,6 +14,11 @@ import Footer from "./Footer";
 const AppShell = () => {
   return (
     <MantineAppShell header={<Header />}>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>r/Apple Discord Website</title>
+        <link rel="canonical" href="https://rapple.xyz/" />
+      </Helmet>
       <Container>
         <OutletWithContext />
       </Container>
