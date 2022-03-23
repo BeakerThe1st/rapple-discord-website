@@ -140,7 +140,7 @@ const AppealForm = ({ disabled }: AppealFormProps) => {
     });
     setSubmitting(true);
     submitBanAppeal(values)
-      .then((data) => {
+      .then(() => {
         notifications.updateNotification(id, {
           id,
           color: "green",
