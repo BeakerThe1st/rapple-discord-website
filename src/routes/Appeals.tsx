@@ -1,6 +1,5 @@
 import {
   Anchor,
-  Box,
   Button,
   Center,
   Checkbox,
@@ -13,11 +12,11 @@ import {
   TextInput,
   Title,
 } from "@mantine/core";
-import { useNotifications } from "@mantine/notifications";
 import { useForm } from "@mantine/form";
+import { useNotifications } from "@mantine/notifications";
 import { useContext, useState } from "react";
+import { FaceId, FaceIdError } from "tabler-icons-react";
 import GuildInfoContext from "../context/GuildInfoContext";
-import { Check, Cross, FaceId, FaceIdError, Ticket } from "tabler-icons-react";
 
 const Appeals = () => {
   const [instructionsChecked, setInstructionsChecked] = useState(false);
