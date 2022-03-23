@@ -39,6 +39,7 @@ const Home = () => {
           className="mx-auto"
           leftIcon={<BrandDiscord size={18} />}
           size="lg"
+          radius="xl"
           gradient={{ from: "indigo", to: "cyan" }}
         >
           Join Server
