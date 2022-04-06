@@ -81,7 +81,7 @@ const ModApplication = () => {
           navigate("/");
         }}
       >
-        Leave this shithole
+        Back to homepage
       </Text>
     </div>
   );
