@@ -30,7 +30,7 @@ const Appeals = () => {
           image: "rounded-full mx-auto max-w-[30%] md:max-w-[128px]",
         }}
       />
-      <Title align="center" order={1} className="mt-4">
+      <Title align="center" order={1} mt="lg">
         r/Apple Discord Ban Appeals
       </Title>
       <Container

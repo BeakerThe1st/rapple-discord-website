@@ -8,6 +8,7 @@ import AppShell from "./components/AppShell";
 import Home from "./routes/Home";
 import Appeals from "./routes/Appeals";
 import FourOhFour from "./routes/FourOhFour";
+import ModApplication from "./routes/ModApplication";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,6 +21,7 @@ ReactDOM.render(
               <Route path="appeals" element={<Appeals />} />
               <Route path="*" element={<FourOhFour />} />
             </Route>
+            <Route path="/mod-application" element={<ModApplication />} />
           </Routes>
         </BrowserRouter>
       </NotificationsProvider>

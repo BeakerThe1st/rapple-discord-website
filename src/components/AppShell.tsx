@@ -19,9 +19,7 @@ const AppShell = () => {
         <title>r/Apple Discord Website</title>
         <link rel="canonical" href="https://rapple.xyz/" />
       </Helmet>
-      <Container>
-        <OutletWithContext />
-      </Container>
+      <OutletWithContext />
     </MantineAppShell>
   );
 };
