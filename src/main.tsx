@@ -9,6 +9,7 @@ import Home from "./routes/Home";
 import Appeals from "./routes/Appeals";
 import FourOhFour from "./routes/FourOhFour";
 import ModApplication from "./routes/ModApplication";
+import Munstie from "./routes/Munstie";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -22,6 +23,7 @@ ReactDOM.render(
               <Route path="*" element={<FourOhFour />} />
             </Route>
             <Route path="/mod-application" element={<ModApplication />} />
+            <Route path="/munstie" element={<Munstie />} />
           </Routes>
         </BrowserRouter>
       </NotificationsProvider>
