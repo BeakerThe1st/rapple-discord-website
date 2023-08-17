@@ -172,8 +172,6 @@ const AppealForm = ({ disabled }: AppealFormProps) => {
       argument: "",
     },
     validate: {
-      userTag: (value) =>
-        /^.{3,32}#[0-9]{4}$/.test(value) ? null : "Invalid user tag",
       userId: (value) => (/^[0-9]*$/.test(value) ? null : "Invalid user ID"),
     },
   });
@@ -195,8 +193,8 @@ const AppealForm = ({ disabled }: AppealFormProps) => {
           <TextInput
             required
             disabled={disabled}
-            label="Discord Tag"
-            placeholder="Floppa#0001"
+            label="Discord Username"
+            placeholder="beakerthe1st"
             {...form.getInputProps("userTag")}
           />
         </Group>
