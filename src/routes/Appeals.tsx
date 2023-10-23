@@ -107,7 +107,7 @@ const AppealForm = ({ disabled }: AppealFormProps) => {
 
   const submitBanAppeal = async (appeal: BanAppeal) => {
     const res = await fetch(
-      "https://bonjour-discord-bot.herokuapp.com/ban-appeal",
+      "https://gday-bot-9381aaa86a22.herokuapp.com/ban-appeal",
       {
         method: "POST",
         mode: "cors",
