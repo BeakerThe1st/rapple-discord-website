@@ -30,7 +30,7 @@ const OutletWithContext = () => {
     if (guildInfo) {
       return;
     }
-    fetch("https://gday-bot-9381aaa86a22.herokuapp.com/guild-info")
+    fetch("http://170.64.250.96:3001/guild-info")
       .then((res) => res.json())
       .then(setGuildInfo);
   }, []);

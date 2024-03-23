@@ -107,7 +107,7 @@ const AppealForm = ({ disabled }: AppealFormProps) => {
 
   const submitBanAppeal = async (appeal: BanAppeal) => {
     const res = await fetch(
-      "https://gday-bot-9381aaa86a22.herokuapp.com/ban-appeal",
+      "http://170.64.250.96:3001/",
       {
         method: "POST",
         mode: "cors",
