@@ -107,7 +107,7 @@ const AppealForm = ({ disabled }: AppealFormProps) => {
 
   const submitBanAppeal = async (appeal: BanAppeal) => {
     const res = await fetch(
-      "http://170.64.250.96:3001/",
+      "http://170.64.250.96:3002/",
       {
         method: "POST",
         mode: "cors",
