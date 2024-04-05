@@ -30,7 +30,7 @@ const OutletWithContext = () => {
     if (guildInfo) {
       return;
     }
-    fetch("http://170.64.250.96:3002/guild-info")
+    fetch("https://api.rapple.xyz/guild-info")
       .then((res) => res.json())
       .then(setGuildInfo);
   }, []);
